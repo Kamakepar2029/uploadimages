@@ -4,7 +4,7 @@ try:
   import requests
   pass
 except:
-  os.system('pip install python-magic requests')
+  os.system('pip3 install python-magic requests')
   pass
 
 def upload_to_server(file, server):
