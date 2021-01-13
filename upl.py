@@ -1,6 +1,11 @@
-import magic
-import requests
-
+import os
+try:
+  import magic
+  import requests
+  pass
+except:
+  os.system('pip install python-magic requests')
+  pass
 
 def upload_to_server(file, server):
   mime = magic.Magic(mime=True)
